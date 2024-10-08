@@ -10,3 +10,22 @@ console.log(countNumbers(numbers1)); // { positive: 4, negative: 2, zero: 3 }
 
 const number2 = [0, -4, -1, -5, 6, 0];
 console.log(countNumbers(number2)); // { positive: 1, negative: 3, zero: 2 }
+
+function countNumbers (numbers){
+    let countPositive = 0
+    let countNegative = 0
+    let countZero = 0
+    for (let i = 0 ; i < numbers.length ; i++){
+        if(numbers1[i] > 0 ){
+            countPositive++
+        }else if (numbers1[i] = 0){
+            countZero++
+        }else {
+            countNegative++
+        }
+    }return {
+        positive : countPositive,
+        negative : countNegative,
+        zero : countZero
+    }
+}

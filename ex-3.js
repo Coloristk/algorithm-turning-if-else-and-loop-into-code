@@ -5,6 +5,17 @@
     - Function นี้จะนับว่าสุนัขแต่ละสายพันธุ์ที่เข้ามาใช้บริการมีจำนวนทั้งหมดกี่ตัว แล้ว Return ค่าออกมา
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ในโค้ดด้านล่าง
 */
+function countDogByBreed (breedArray){
+  let dogFrequency = {}
+  for (let i = 0 ; i < breedArray.length ; i++){
+    let breed = breedArray[i]
+    if(dogFrequency[breed]){
+      dogFrequency[breed]++
+    }else{
+      dogFrequency[breed] = 1
+    }
+  }return dogFrequency
+}
 
 const breedArray1 = [
     "Beagle",
