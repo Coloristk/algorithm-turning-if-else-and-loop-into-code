@@ -10,3 +10,12 @@ console.log(sumPositiveNumbers(numbers1)); // 35
 
 const number2 = [0, -4, -1, -5, 6, 5, 0];
 console.log(sumPositiveNumbers(number2)); // 11
+
+function sumPositiveNumbers(numbers){
+    let result = 0
+    for (let i = 0 ; i < numbers.length ; i++){
+        if (numbers1[i] >  0){
+            result += numbers[i]
+        }
+    }   return result
+}
